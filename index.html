@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travelling with Waves - discover beautiful beaches and unforgettable travel destinations.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Travelling with Waves | Explore Beautiful Beaches</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#home" class="nav__logo">Travelling<span> with Waves</span></a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active-link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#discover" class="nav__link">Discover</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#place" class="nav__link">Places</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-button" type="button" aria-label="Toggle dark mode">
+          <span>Dark mode</span><i class="ri-moon-line" aria-hidden="true"></i>
+        </button>
+        <button class="nav__close" id="nav-close" type="button" aria-label="Close menu"><i class="ri-close-line"></i></button>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="ri-menu-4-line"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <img src="images/home1.jpg" alt="Tropical beach with turquoise water" class="home__img">
+      <div class="home__shade"></div>
+      <div class="home__container container">
+        <div class="home__data">
+          <span class="eyebrow">Discover your place</span>
+          <h1>Explore the <br><strong>world's most<br>beautiful beaches</strong></h1>
+          <p>Curated coastal escapes, unforgettable experiences and destinations worth travelling for.</p>
+          <a href="#place" class="button">Explore destinations <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="home__social" aria-label="Social media links">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+        </div>
+        <a href="#discover" class="home__info" aria-label="See featured destinations">
+          <div><span>5 best places to visit</span><strong>Discover now <i class="ri-arrow-right-line"></i></strong></div>
+          <img src="images/home2.jpg" alt="Aerial view of a tropical island">
+        </a>
+      </div>
+      <a class="scroll-hint" href="#about"><i class="ri-mouse-line"></i><span>Scroll to explore</span></a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about__container container grid-2">
+        <div class="about__data">
+          <span class="section-kicker">Travel differently</span>
+          <h2 class="section__title">More information about the best beaches</h2>
+          <p class="section__description">Find beautiful and peaceful places at carefully selected prices. Choose your destination and let us guide you through an easy, memorable travel experience.</p>
+          <div class="about__features">
+            <div><i class="ri-map-pin-2-line"></i><span>Hand-picked destinations</span></div>
+            <div><i class="ri-price-tag-3-line"></i><span>Special travel offers</span></div>
+            <div><i class="ri-customer-service-2-line"></i><span>Travel support</span></div>
+          </div>
+          <a href="#place" class="button">Reserve a place <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="about__img">
+          <div class="about__img-overlay about__img-one"><img src="images/about1.jpg" alt="White sandy beach surrounded by greenery"></div>
+          <div class="about__img-overlay about__img-two"><img src="images/about2.jpg" alt="Beautiful tropical coastline"></div>
+          <div class="image-badge"><strong>4.9/5</strong><span>traveller rating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover section" id="discover">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">Dream destinations</span><h2 class="section__title">Discover the most attractive places</h2></div>
+          <div class="carousel-controls"><button id="discover-prev" type="button" aria-label="Previous destination"><i class="ri-arrow-left-line"></i></button><button id="discover-next" type="button" aria-label="Next destination"><i class="ri-arrow-right-line"></i></button></div>
+        </div>
+        <div class="discover__viewport">
+          <div class="discover__track" id="discover-track">
+            <article class="discover__card"><img src="images/discover1.jpg" alt="Bali destination"><div class="discover__data"><span>Indonesia</span><h3>Bali</h3><p>24 tours available</p></div></article>
+            <article class="discover__card"><img src="images/discover2.jpg" alt="Hawaii destination"><div class="discover__data"><span>United States</span><h3>Hawaii</h3><p>15 tours available</p></div></article>
+            <article class="discover__card"><img src="images/discover3.jpg" alt="Hvar destination"><div class="discover__data"><span>Croatia</span><h3>Hvar</h3><p>18 tours available</p></div></article>
+            <article class="discover__card"><img src="images/discover4.jpg" alt="Whitehaven destination"><div class="discover__data"><span>Australia</span><h3>Whitehaven</h3><p>32 tours available</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="container grid-2 experience__container">
+        <div>
+          <span class="section-kicker">Why travel with us</span>
+          <h2 class="section__title">With our experience, we serve you better</h2>
+          <p class="section__description">Years of travel experience help us create journeys that balance beautiful scenery, comfort and genuine local experiences.</p>
+          <div class="experience__content">
+            <div><strong>20</strong><span>Years<br>experience</span></div>
+            <div><strong>75</strong><span>Complete<br>tours</span></div>
+            <div><strong>650+</strong><span>Tourist<br>destinations</span></div>
+          </div>
+        </div>
+        <div class="experience__img">
+          <div class="experience__overlay"><img src="images/experience1.jpg" alt="Traveller enjoying a coastal view"></div>
+          <div class="experience__overlay"><img src="images/experience2.jpg" alt="Ocean waves and beach"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video section" id="video-tour">
+      <div class="container">
+        <div class="section-heading video-heading"><div><span class="section-kicker">See it before you go</span><h2 class="section__title">Video tour</h2></div><p class="section__description">Take a quick visual journey through some of the most beautiful and relaxing places waiting for you.</p></div>
+        <div class="video__content">
+          <video id="video-file" preload="metadata" playsinline poster="images/home2.jpg"><source src="images/video (1).mp4" type="video/mp4">Your browser does not support HTML5 video.</video>
+          <button class="video__button" id="video-button" type="button" aria-label="Play video"><i class="ri-play-fill" id="video-icon"></i></button>
+          <div class="video__label"><i class="ri-play-circle-line"></i> Coastal escape</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="place section" id="place">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-kicker">Choose your escape</span><h2 class="section__title">Popular places</h2></div><p class="section__description">Explore our featured destinations and select the experience that feels right for you.</p></div>
+        <div class="place__container">
+          <article class="place__card" data-place="Bali"><img src="images/place1.jpg" alt="Bali"><div class="place__content"><span class="place__rating"><i class="ri-star-fill"></i> 4.8</span><div><h3>Bali</h3><span>Indonesia</span><strong>$2,499</strong></div></div><button class="place__button" type="button" aria-label="View Bali"><i class="ri-arrow-right-line"></i></button></article>
+          <article class="place__card" data-place="Bora Bora"><img src="images/place2.jpg" alt="Bora Bora"><div class="place__content"><span class="place__rating"><i class="ri-star-fill"></i> 5.0</span><div><h3>Bora Bora</h3><span>Polynesia</span><strong>$1,599</strong></div></div><button class="place__button" type="button" aria-label="View Bora Bora"><i class="ri-arrow-right-line"></i></button></article>
+          <article class="place__card" data-place="Hawaii"><img src="images/place3.jpg" alt="Hawaii"><div class="place__content"><span class="place__rating"><i class="ri-star-fill"></i> 4.9</span><div><h3>Hawaii</h3><span>United States</span><strong>$3,499</strong></div></div><button class="place__button" type="button" aria-label="View Hawaii"><i class="ri-arrow-right-line"></i></button></article>
+          <article class="place__card" data-place="Whitehaven"><img src="images/place4.jpg" alt="Whitehaven"><div class="place__content"><span class="place__rating"><i class="ri-star-fill"></i> 4.8</span><div><h3>Whitehaven</h3><span>Australia</span><strong>$2,499</strong></div></div><button class="place__button" type="button" aria-label="View Whitehaven"><i class="ri-arrow-right-line"></i></button></article>
+          <article class="place__card" data-place="Hvar"><img src="images/place5.jpg" alt="Hvar"><div class="place__content"><span class="place__rating"><i class="ri-star-fill"></i> 4.8</span><div><h3>Hvar</h3><span>Croatia</span><strong>$1,999</strong></div></div><button class="place__button" type="button" aria-label="View Hvar"><i class="ri-arrow-right-line"></i></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe section" id="subscribe">
+      <div class="subscribe__bg container">
+        <div><span class="section-kicker">Stay inspired</span><h2 class="section__title">Get travel ideas<br>in your inbox</h2><p>Subscribe and receive destination inspiration plus special offers.</p></div>
+        <form class="subscribe__form" id="subscribe-form" novalidate><label class="sr-only" for="email">Email address</label><input id="email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required><button class="button" type="submit">Subscribe <i class="ri-send-plane-line"></i></button><small id="form-message" role="status"></small></form>
+      </div>
+    </section>
+
+    <section class="sponsor section" aria-label="Travel partners">
+      <div class="container sponsor__container">
+        <img src="images/sponsors1.png" alt="Travel partner 1"><img src="images/sponsors2.png" alt="Travel partner 2"><img src="images/sponsors3.png" alt="Travel partner 3"><img src="images/sponsors4.png" alt="Travel partner 4"><img src="images/sponsors5.png" alt="Travel partner 5">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand"><a href="#home" class="nav__logo">Travelling<span> with Waves</span></a><p>Choose the destination. We create the experience.</p><div class="footer__social"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ri-facebook-fill"></i></a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="ri-youtube-fill"></i></a></div></div>
+      <div><h3>Explore</h3><a href="#about">About us</a><a href="#discover">Discover</a><a href="#place">Places</a></div>
+      <div><h3>Support</h3><a href="#subscribe">Newsletter</a><a href="#video-tour">Video tour</a><a href="mailto:hello@travellingwithwaves.com">Contact us</a></div>
+      <div><h3>Plan</h3><a href="#place">Featured trips</a><a href="#place">Pricing</a><a href="#home">Back to top</a></div>
+    </div>
+    <div class="footer__bottom container"><span>© 2026 Travelling with Waves. All rights reserved.</span><span>Made for memorable journeys.</span></div>
+  </footer>
+
+  <div class="modal" id="place-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box"><button class="modal__close" type="button" data-close-modal aria-label="Close"><i class="ri-close-line"></i></button><span class="section-kicker">Destination details</span><h2 id="modal-title">Destination</h2><p id="modal-text"></p><a href="#subscribe" class="button" data-close-modal>Request travel updates <i class="ri-arrow-right-line"></i></a></div>
+  </div>
+
+  <a href="#home" class="scrollup" id="scroll-up" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>
